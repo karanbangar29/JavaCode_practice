@@ -1,19 +1,15 @@
 package com.coffeeshop.multithreading;
 
-import org.w3c.dom.ls.LSOutput;
+class MyRunnable implements Runnable {
+    public void run() {
 
-import java.util.concurrent.ExecutorService;
-import java.util.concurrent.Executors;
+        System.out.println("Running: " + Thread.currentThread().getName());
+    }
+}
 
 public class RunnableExample {
-
     public static void main(String[] args) {
-        Runnable runnable=() -> System.out.println("task running...");
-
-        Thread t=new Thread(runnable);
-        t.start();
-
-        ExecutorService executorService= Executors.newFixedThreadPool(2);
-        executorService.submit(() -> System.out.println("thread is running in executor service.."));
+        Thread t1 = new Thread(new MyRunnable());
+        t1.start();
     }
 }

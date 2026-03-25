@@ -1,14 +1,7 @@
 package com.coffeeshop.stingProb;
 
 
-class Employee{
-private String fName;
-private  String lName;
-    private Employee(String fName,String lName){
-        this.fName=fName;
-        this.lName=lName;
-    }
-}
+
 public class DemoClass {
     private static DemoClass demoClass;
    private DemoClass(){
