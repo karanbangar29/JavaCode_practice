@@ -1,4 +1,10 @@
 package com.coffeeshop.multithreading;
 
-public class CallableEx2 {
+import java.util.concurrent.Callable;
+
+public class CallableEx2 implements Callable<String> {
+    public String call() throws Exception{
+        return "task completed";
+    }
+
 }

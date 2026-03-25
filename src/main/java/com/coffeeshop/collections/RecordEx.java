@@ -1,4 +1,4 @@
 package com.coffeeshop.collections;
 
-public class RecordEx {
+public record RecordEx(Long id,String name) {
 }

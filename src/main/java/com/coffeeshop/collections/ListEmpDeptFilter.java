@@ -5,7 +5,7 @@ import java.util.List;
 import java.util.Map;
 import java.util.stream.Collectors;
 
-public class ListEmp {
+public class ListEmpDeptFilter {
     public static void main(String[] args) {
         //list emp
         // sort by slary grp by department
